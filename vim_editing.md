@@ -141,8 +141,8 @@
 |Command        |Mode                   |Description                                                        |
 |:--            |:---                   |:---                                                               |
 |`v`            |N $\rightarrow$ V      |visual mode                                                        |
-|`<Ctrl-V>`     |N $\rightarrow$ VB     |visual mode blockwise                                              |
-|`V`            |N $\rightarrow$ VL     |visual mode linewise                                               |
+|`<Ctrl-V>`     |N $\rightarrow$ VB     |visual mode block wise                                             |
+|`V`            |N $\rightarrow$ VL     |visual mode line wise                                              |
 |`[N]I<text>`   |VB $\rightarrow$ I     |insert `<text>` before each selected line                          |
 |`[N]A<text>`   |VB $\rightarrow$ I     |append `<text>` after each selected line                           |
 |`x` or `d`     |V, VB, VL              |delete selected contents                                           |
@@ -363,5 +363,27 @@ Use command `:help pattern` in vim to view available pattern expressions.
 |`zR`               |N          |open all folds in current window           |
 |`zm`               |N          |increase folding                           |
 |`zM`               |N          |Close all folds in current window          |
+
+
+# Spell Checking
+
+Spell checking inside vim should be switched on manually.
+
+The spellfile is the word list file where words are added for the `zg` and `zw` commands.
+The internal-wordlist is as spellfile but only for all buffers in current session.
+
+|Command            |Mode       |Description                                                    |
+|:--                |:---       |:---                                                           |
+|`[s`               |N          |move to next misspelled word                                   |
+|`]s`               |N          |move to previous misspelled word                               |
+|`zg`               |N, V       |add word as a good word to the spellfile                       |
+|`zG`               |N, V       |add word as a good word to the internal-wordlist               |
+|`zug`              |N, V       |undo `zg`                                                      |
+|`zuG`              |N, V       |undo `zG`                                                      |
+|`zw`               |N, V       |add word as a wrong word to the spellfile                      |
+|`zW`               |N, V       |add word as a wrong word to the internal-wordlist              |
+|`zuw`              |N, V       |undo `zw`                                                      |
+|`zuW`              |N, V       |undo `zW`                                                      |
+|`z=`               |N          |find the possible correction for the wrong word under cursor   |
 
 
