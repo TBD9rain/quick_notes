@@ -1,7 +1,14 @@
-# ignore vim operation record files
+#======================================
+# snippets from Ultisnips are available
+#======================================
+
+
+#--------------------
+# Vim temporary files
+#--------------------
+
 *~
+*.un~
 *.swp
 
-# ignore shotlink files
-*.lnk
 
