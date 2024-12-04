@@ -287,6 +287,12 @@ Mermaid could be used to quickly create:
 - [class diagram](http://mermaid.js.org/syntax/classDiagram.html)
 - [...](http://mermaid.js.org/intro/n00b-gettingStarted.html "Getting Stated")
 
+Current supported Mermaid version is (which is different in different previewer):
+
+```mermaid
+info
+```
+
 A flowchart creation is displayed as following. 
 
 ~~~
