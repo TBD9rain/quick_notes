@@ -8,4 +8,5 @@
 |[Project Dev](./pj_dev.md)                                     |tips for project development               |
 |[Lattice Diamond Preference](./lattice_diamond_preference.md)  |preference command summary for Diamond     |
 |[Lattice Radiant Constraint](./lattice_radiant_constraint.md)  |constraint command summary for Radiant     |
+|[HDL Simulation Scheduling](./hdl_sim_scheduling.md)           |HDL simulation Scheduling semantics        |
 
